@@ -576,3 +576,7 @@ width: 60%;
 .main-container .scorecard-container .fcsb.bowling{
   margin-top: 2rem;
 }
+
+.main-container .scorecard-container .data{
+  padding-bottom: 0.5rem;
+}
