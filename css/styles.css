@@ -406,6 +406,7 @@ width: 60%;
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
+  background: rgb(237, 237, 237);
 }
 
 .main-container .scorecard-container .innings-buttons >*{
@@ -415,7 +416,6 @@ width: 60%;
   display: flex;
   align-items: center;
   text-align: center;
-  border-radius: 20px;
   font-weight: 600;
   font-size: 1.1rem;
   text-transform: uppercase;
@@ -427,6 +427,16 @@ width: 60%;
 .selected-button{
   background: darkcyan;
   color: white;
+}
+
+.innings-buttons .innings-buttons__first-team{
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+
+.innings-buttons .innings-buttons__second-team{
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
 }
 
 .main-container .scorecard-container .extras{
@@ -579,4 +589,52 @@ width: 60%;
 
 .main-container .scorecard-container .data{
   padding-bottom: 0.5rem;
+}
+
+.main-container .scorecard-container .fall-of-wickets{
+  /* height: 10%; */
+  border: 1px solid black;
+  padding: 1rem;
+  font-weight: 600;
+
+}
+
+.fall-of-wickets .heading{
+  color: darkcyan;
+  font-size: 1.2rem;
+}
+
+.fall-of-wickets ol{
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.fall-of-wickets ol li{
+  width: 95%;
+  /* display: flex; */
+  /* list-style: decimal; */
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+
+.fall-of-wickets .wicket-info{
+  width: 100%;
+  display: flex;
+  font-size: 1.1rem;
+}
+
+.fall-of-wickets .wicket-info .player-name{
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  /* gap: 1rem; */
+}
+
+.fall-of-wickets .wicket-info .player-score{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
