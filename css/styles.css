@@ -297,7 +297,6 @@ width: 60%;
   height: 6%;
 }
 
-
 .main-container .score-inputs {
   width: 100%;
   height: 41%;
@@ -385,7 +384,7 @@ width: 60%;
 
 .container .ref-image {
   background-color: black;
-  background-image: url("../References/scorecard-menu-1.jpg");
+  background-image: url("../References/balls-menu.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -407,6 +406,8 @@ width: 60%;
   justify-content: center;
   margin-top: 1rem;
   background: rgb(237, 237, 237);
+  position: sticky;
+  top:0;
 }
 
 .main-container .scorecard-container .innings-buttons >*{
@@ -593,7 +594,7 @@ width: 60%;
 
 .main-container .scorecard-container .fall-of-wickets{
   /* height: 10%; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 1rem;
   font-weight: 600;
 
@@ -637,4 +638,172 @@ width: 60%;
   width: 50%;
   display: flex;
   justify-content: flex-end;
+}
+
+.main-container .balls-menu-container{
+  width: 100%;
+  height: 100%;
+}
+
+.balls-menu-container .innings-buttons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: rgb(103, 100, 100);
+  font-weight: 600;
+}
+
+.balls-menu-container .innings-buttons >*{
+  border: 1px solid grey;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 37%;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.balls-menu-container .innings-buttons .innings-buttons__first{
+  padding-left: 1.5rem;
+  padding-right: 0;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.balls-menu-container .innings-buttons .innings-buttons__second{
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.active-button{
+  background: darkcyan;
+  color: white;
+}
+
+.balls-menu-container .innings-info{
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 15px;
+  background: rgb(238, 237, 237);
+}
+
+.balls-menu-container .innings-info .live-stats-balls{
+  width: 95%;
+  margin: 1rem;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  margin-left: 0.7rem;
+  margin-right: 1rem;
+  /* border: 1px solid black; */
+  overflow: hidden;
+  /* border-bottom: 1px solid rgb(212, 210, 210); */
+}
+
+.balls-menu-container .innings-info .live-stats-balls >*{
+  width: 18px;
+  background: rgb(204, 200, 200);
+}
+
+.balls-menu-container .player-stats{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9rem;
+  font-weight: 600;
+  /* border-bottom: 1px solid rgb(190, 187, 187); */
+}
+
+.balls-menu-container .player-stats .batsmans-stats{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.balls-menu-container .player-stats .batsmans-stats >*{
+  width: 100%;
+  display: flex;
+}
+
+.player-stats .batsmans-stats .batsman-score{
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.player-stats .batsmans-stats .batsman-name{
+  width: 44%;
+}
+
+.border-gray{
+  margin-top: 0.5rem;
+  width: 590%;
+  transform: translateX(-70%);
+  border:1px solid rgb(212, 210, 210);
+}
+
+.balls-menu-container .innings-stats{
+  width: 90%;
+  color: darkcyan;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem auto;
+  padding-bottom: 1rem;
+}
+
+.commentary{
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.commentary-balls{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.commentary-balls .over{
+  font-weight: 700;
+}
+
+.commentary-balls .ball>*{
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio:1;
+  border-radius: 50%;
+  border:1px solid darkcyan;
+  text-align: center;
+  color: darkcyan;
+  font-weight: 700;
+}
+
+.commentary-balls .ball .wicket{
+  background: rgb(253, 73, 73);
+  border: none;
+  color: white;
+}
+
+.commetary-balls .ball .boundary{
+  background: darkcyan;
+  border: none;
+  color: white;
+}
+
+.commentary .commentary-balls .comment-heading{
+  color: black;
+  font-weight: 600;
+}
+
+.commentary .commentary-balls .comment-desc{
+  color: gray;
+  margin-top: 0.5rem;
 }
